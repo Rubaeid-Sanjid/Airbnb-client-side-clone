@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "name": "Urban",
+      "icon": "IoBusiness",
+      "type": "urban"
+    },
+    {
+      "id": 2,
+      "name": "Rooms",
+      "icon": "IoBed",
+      "type": "room"
+    },
+    {
+      "id": 3,
+      "name": "Countryside",
+      "icon": "IoEarth",
+      "type": "nature"
+    },
+    {
+      "id": 4,
+      "name": "Cabin",
+      "icon": "IoHome",
+      "type": "cabin"
+    },
+    {
+      "id": 5,
+      "name": "Island",
+      "icon": "GiIsland",
+      "type": "island"
+    },
+    {
+      "id": 6,
+      "name": "Beachfront",
+      "icon": "IoSunny",
+      "type": "beach"
+    },
+    {
+      "id": 7,
+      "name": "Lakefront",
+      "icon": "IoWater",
+      "type": "lake"
+    },
+    {
+      "id": 8,
+      "name": "Tiny Homes",
+      "icon": "IoHome",
+      "type": "tiny_home"
+    },
+    {
+      "id": 9,
+      "name": "Farm Stay",
+      "icon": "GiFarmTractor",
+      "type": "farm"
+    },
+    {
+      "id": 10,
+      "name": "Luxury",
+      "icon": "IoDiamond",
+      "type": "luxury"
+    },
+    {
+      "id": 11,
+      "name": "Treehouse",
+      "icon": "GiTreehouse",
+      "type": "treehouse"
+    },
+    {
+      "id": 12,
+      "name": "Mansion",
+      "icon": "GiMansion",
+      "type": "mansion"
+    },
+    {
+      "id": 13,
+      "name": "Boat",
+      "icon": "IoBoat",
+      "type": "boat"
+    },
+    {
+      "id": 14,
+      "name": "Desert",
+      "icon": "IoSunny",
+      "type": "desert"
+    },
+    {
+      "id": 15,
+      "name": "Mountain",
+      "icon": "IoMountain",
+      "type": "mountain"
+    }
+  ]
+  
