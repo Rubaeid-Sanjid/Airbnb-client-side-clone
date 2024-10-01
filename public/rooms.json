@@ -14,7 +14,7 @@
       "pricePerNight": 300,
       "beds": 1,
       "bathrooms": 1,
-      "images": ["https://example.com/images/icon1.jpg"]
+      "images": ["https://i.postimg.cc/YSBmXdwT/icons.webp"]
     },
     {
       "id": 2,
@@ -31,7 +31,9 @@
       "pricePerNight": 500,
       "beds": 1,
       "bathrooms": 1,
-      "images": ["https://example.com/images/room1.jpg"]
+      "images": ["https://i.postimg.cc/Y2DLcrH6/room.webp",
+      "https://i.postimg.cc/wTtygCqS/room2.webp",
+      "https://i.postimg.cc/c4VKHF66/room3.webp"]
     },
     {
       "id": 3,
@@ -48,7 +50,9 @@
       "pricePerNight": 200,
       "beds": 3,
       "bathrooms": 2,
-      "images": ["https://example.com/images/nature1.jpg"]
+      "images": ["https://i.postimg.cc/PxhYq231/countryside.webp",
+      "https://i.postimg.cc/zBjWHK66/countryside2.webp",
+      "https://i.postimg.cc/tJ4637HT/countryside3.webp"]
     },
     {
       "id": 4,
@@ -65,7 +69,9 @@
       "pricePerNight": 400,
       "beds": 4,
       "bathrooms": 2,
-      "images": ["https://example.com/images/cabin1.jpg"]
+      "images": ["https://i.postimg.cc/MpMy3cff/cabin.webp",
+      "https://i.postimg.cc/RZkwkMws/cabin2.webp",
+      "https://i.postimg.cc/s255ytcV/cabin3.webp"]
     },
     {
       "id": 5,
@@ -82,7 +88,9 @@
       "pricePerNight": 800,
       "beds": 2,
       "bathrooms": 2,
-      "images": ["https://example.com/images/island1.jpg"]
+      "images": ["https://i.postimg.cc/4x99brjz/island.webp",
+      "https://i.postimg.cc/nLK9NqFr/island2.webp",
+      "https://i.postimg.cc/851fGscH/island3.webp"]
     },
     {
       "id": 6,
@@ -99,7 +107,9 @@
       "pricePerNight": 700,
       "beds": 3,
       "bathrooms": 3,
-      "images": ["https://example.com/images/beach1.jpg"]
+      "images": ["https://i.postimg.cc/C5cjXk4k/beachfront.webp",
+      "https://i.postimg.cc/yx1mLv07/beachfront2.webp",
+      "https://i.postimg.cc/dQ6mhcK3/beachfront3.webp"]
     },
     {
       "id": 7,
@@ -116,7 +126,9 @@
       "pricePerNight": 350,
       "beds": 3,
       "bathrooms": 2,
-      "images": ["https://example.com/images/lake1.jpg"]
+      "images": ["https://i.postimg.cc/mD8zgRFG/lakefront.webp",
+      "https://i.postimg.cc/1XXggTpV/lakefront2.webp",
+      "https://i.postimg.cc/NFnKR44J/lakefront3.webp"]
     },
     {
       "id": 8,
@@ -133,7 +145,8 @@
       "pricePerNight": 150,
       "beds": 1,
       "bathrooms": 1,
-      "images": ["https://example.com/images/tinyhome1.jpg"]
+      "images": ["https://i.postimg.cc/0yDzJ7Jn/TinyHome.webp",
+      "https://i.postimg.cc/pdvpQyfH/Tiny-Home2.webp"]
     },
     {
       "id": 9,
@@ -150,7 +163,8 @@
       "pricePerNight": 120,
       "beds": 2,
       "bathrooms": 1,
-      "images": ["https://example.com/images/farm1.jpg"]
+      "images": ["https://i.postimg.cc/BQtDt8g7/farm.webp",
+      "https://i.postimg.cc/wTPNN64q/farm2.webp"]
     },
     {
       "id": 10,
@@ -184,7 +198,8 @@
       "pricePerNight": 300,
       "beds": 1,
       "bathrooms": 1,
-      "images": ["https://example.com/images/treehouse1.jpg"]
+      "images": ["https://i.postimg.cc/mD2kqqpp/treehouse.webp",
+      "https://i.postimg.cc/yNTWLBjS/treehouse2.webp"]
     },
     {
       "id": 12,
@@ -201,7 +216,8 @@
       "pricePerNight": 1200,
       "beds": 3,
       "bathrooms": 2,
-      "images": ["https://example.com/images/boat1.jpg"]
+      "images": ["https://i.postimg.cc/m2r3Mpbw/boats.webp",
+      "https://i.postimg.cc/zXPCkwv1/boats2.webp"]
     },
     {
       "id": 13,
@@ -218,7 +234,8 @@
       "pricePerNight": 250,
       "beds": 1,
       "bathrooms": 1,
-      "images": ["https://example.com/images/desert1.jpg"]
+      "images": ["https://i.postimg.cc/sxHhwyVJ/desert.webp",
+      "https://i.postimg.cc/9XLZWPGq/desert2.webp"]
     },
     {
       "id": 14,
@@ -338,6 +355,24 @@
       "beds": 5,
       "bathrooms": 4,
       "images": ["https://example.com/images/castle1.jpg"]
+    },
+    {
+      "id": 21,
+      "name": "Arctic",
+      "category": "arctic",
+      "destination": "Inari, Finland",
+      "checkIn": "2024-10-01",
+      "checkOut": "2024-10-06",
+      "guests": {
+        "adults": 4,
+        "children": 2,
+        "pets": 0
+      },
+      "pricePerNight": 1500,
+      "beds": 4,
+      "bathrooms": 3,
+      "images": ["https://i.postimg.cc/tTtddLZr/arctic.webp",
+      "https://i.postimg.cc/fLhj9wLt/arctic2.webp"]
     }
   ]
   

@@ -230,7 +230,7 @@ const FilteringBar = () => {
   ];
 
   return (
-    <div className="my-6 border-t p-6 flex gap-6">
+    <div className="my-6 border-y p-6 flex items-center gap-6">
       <Swiper
         modules={[Navigation]}
         spaceBetween={5}
@@ -264,13 +264,13 @@ const FilteringBar = () => {
       </Swiper>
 
       {/* Filter button */}
-      <button className="flex gap-3 items-center px-3 border rounded-xl font-medium">
+      <button className="flex gap-3 items-center p-3 border rounded-xl font-medium">
         <VscSettings />
         <span>Filters</span>
       </button>
 
       {/* Toggle bar */}
-      <div className="flex gap-3 items-center px-3 border rounded-xl cursor-pointer font-medium">
+      <div className="flex gap-3 items-center p-3 border rounded-xl cursor-pointer font-medium">
         <span className="label-text">Display total before taxes</span>
         <input type="checkbox" className="toggle" />
       </div>

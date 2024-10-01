@@ -1,0 +1,14 @@
+.custom-swiper-nav .swiper-button-next,
+.custom-swiper-nav .swiper-button-prev {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .swiper-button-next,
+.image-container:hover .swiper-button-prev {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+  color: black;
+}

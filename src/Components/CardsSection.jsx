@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
+import RoomCard from './RoomCard/RoomCard';
 
 const CardsSection = () => {
     const { isPending, error, data: rooms = []} = useQuery({
@@ -13,8 +14,10 @@ const CardsSection = () => {
 
   if (error) return 'An error has occurred: ' + error.message
     return (
-        <div>
-            <h2>All Cards {rooms.length}</h2>
+        <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 px-3 lg:px-10'>
+            {
+                rooms.map(room => <RoomCard key={room.id} room={room}></RoomCard>)
+            }
         </div>
     );
 };
