@@ -1,0 +1,343 @@
+[
+    {
+      "id": 1,
+      "name": "Iconic Apartment",
+      "category": "icon",
+      "destination": "Paris, France",
+      "checkIn": "2024-12-05",
+      "checkOut": "2024-12-10",
+      "guests": {
+        "adults": 2,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 300,
+      "beds": 1,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/icon1.jpg"]
+    },
+    {
+      "id": 2,
+      "name": "Luxury Suite",
+      "category": "room",
+      "destination": "New York, USA",
+      "checkIn": "2024-11-01",
+      "checkOut": "2024-11-07",
+      "guests": {
+        "adults": 2,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 500,
+      "beds": 1,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/room1.jpg"]
+    },
+    {
+      "id": 3,
+      "name": "Countryside Escape",
+      "category": "nature",
+      "destination": "Tuscany, Italy",
+      "checkIn": "2024-10-10",
+      "checkOut": "2024-10-20",
+      "guests": {
+        "adults": 4,
+        "children": 2,
+        "pets": 1
+      },
+      "pricePerNight": 200,
+      "beds": 3,
+      "bathrooms": 2,
+      "images": ["https://example.com/images/nature1.jpg"]
+    },
+    {
+      "id": 4,
+      "name": "Cabin by the Lake",
+      "category": "cabin",
+      "destination": "Lake Tahoe, USA",
+      "checkIn": "2024-11-15",
+      "checkOut": "2024-11-21",
+      "guests": {
+        "adults": 5,
+        "children": 2,
+        "pets": 0
+      },
+      "pricePerNight": 400,
+      "beds": 4,
+      "bathrooms": 2,
+      "images": ["https://example.com/images/cabin1.jpg"]
+    },
+    {
+      "id": 5,
+      "name": "Island Retreat",
+      "category": "island",
+      "destination": "Bora Bora",
+      "checkIn": "2024-12-01",
+      "checkOut": "2024-12-07",
+      "guests": {
+        "adults": 4,
+        "children": 1,
+        "pets": 0
+      },
+      "pricePerNight": 800,
+      "beds": 2,
+      "bathrooms": 2,
+      "images": ["https://example.com/images/island1.jpg"]
+    },
+    {
+      "id": 6,
+      "name": "Beachfront Villa",
+      "category": "beach",
+      "destination": "Malibu, USA",
+      "checkIn": "2024-09-20",
+      "checkOut": "2024-09-25",
+      "guests": {
+        "adults": 6,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 700,
+      "beds": 3,
+      "bathrooms": 3,
+      "images": ["https://example.com/images/beach1.jpg"]
+    },
+    {
+      "id": 7,
+      "name": "Lakefront Cabin",
+      "category": "lake",
+      "destination": "Lake Geneva, Switzerland",
+      "checkIn": "2024-08-01",
+      "checkOut": "2024-08-10",
+      "guests": {
+        "adults": 4,
+        "children": 2,
+        "pets": 1
+      },
+      "pricePerNight": 350,
+      "beds": 3,
+      "bathrooms": 2,
+      "images": ["https://example.com/images/lake1.jpg"]
+    },
+    {
+      "id": 8,
+      "name": "Tiny Home Experience",
+      "category": "tiny_home",
+      "destination": "Portland, USA",
+      "checkIn": "2024-09-10",
+      "checkOut": "2024-09-15",
+      "guests": {
+        "adults": 2,
+        "children": 1,
+        "pets": 0
+      },
+      "pricePerNight": 150,
+      "beds": 1,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/tinyhome1.jpg"]
+    },
+    {
+      "id": 9,
+      "name": "Farm Stay",
+      "category": "farm",
+      "destination": "Lancaster, USA",
+      "checkIn": "2024-10-10",
+      "checkOut": "2024-10-15",
+      "guests": {
+        "adults": 3,
+        "children": 1,
+        "pets": 1
+      },
+      "pricePerNight": 120,
+      "beds": 2,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/farm1.jpg"]
+    },
+    {
+      "id": 10,
+      "name": "Luxury Condo",
+      "category": "luxury",
+      "destination": "Dubai, UAE",
+      "checkIn": "2024-11-05",
+      "checkOut": "2024-11-12",
+      "guests": {
+        "adults": 4,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 1000,
+      "beds": 2,
+      "bathrooms": 2,
+      "images": ["https://example.com/images/luxury1.jpg"]
+    },
+    {
+      "id": 11,
+      "name": "Treehouse Escape",
+      "category": "treehouse",
+      "destination": "Asheville, USA",
+      "checkIn": "2024-10-20",
+      "checkOut": "2024-10-25",
+      "guests": {
+        "adults": 2,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 300,
+      "beds": 1,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/treehouse1.jpg"]
+    },
+    {
+      "id": 12,
+      "name": "Yacht Experience",
+      "category": "boat",
+      "destination": "San Diego, USA",
+      "checkIn": "2024-12-15",
+      "checkOut": "2024-12-20",
+      "guests": {
+        "adults": 6,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 1200,
+      "beds": 3,
+      "bathrooms": 2,
+      "images": ["https://example.com/images/boat1.jpg"]
+    },
+    {
+      "id": 13,
+      "name": "Desert Getaway",
+      "category": "desert",
+      "destination": "Phoenix, USA",
+      "checkIn": "2024-09-25",
+      "checkOut": "2024-09-30",
+      "guests": {
+        "adults": 2,
+        "children": 1,
+        "pets": 0
+      },
+      "pricePerNight": 250,
+      "beds": 1,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/desert1.jpg"]
+    },
+    {
+      "id": 14,
+      "name": "Mountain Lodge",
+      "category": "mountain",
+      "destination": "Denver, USA",
+      "checkIn": "2024-11-10",
+      "checkOut": "2024-11-17",
+      "guests": {
+        "adults": 5,
+        "children": 2,
+        "pets": 1
+      },
+      "pricePerNight": 400,
+      "beds": 4,
+      "bathrooms": 2,
+      "images": ["https://example.com/images/mountain1.jpg"]
+    },
+    {
+      "id": 15,
+      "name": "Urban Loft",
+      "category": "urban",
+      "destination": "Tokyo, Japan",
+      "checkIn": "2024-10-01",
+      "checkOut": "2024-10-07",
+      "guests": {
+        "adults": 2,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 300,
+      "beds": 1,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/urban1.jpg"]
+    },
+    {
+      "id": 16,
+      "name": "Hut by the Hills",
+      "category": "hut",
+      "destination": "Tatra Mountains, Poland",
+      "checkIn": "2024-09-15",
+      "checkOut": "2024-09-20",
+      "guests": {
+        "adults": 3,
+        "children": 1,
+        "pets": 0
+      },
+      "pricePerNight": 100,
+      "beds": 2,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/hut1.jpg"]
+    },
+    {
+      "id": 17,
+      "name": "Private Mansion",
+      "category": "mansion",
+      "destination": "Beverly Hills, USA",
+      "checkIn": "2024-12-10",
+      "checkOut": "2024-12-20",
+      "guests": {
+        "adults": 10,
+        "children": 2,
+        "pets": 0
+      },
+      "pricePerNight": 2000,
+      "beds": 6,
+      "bathrooms": 5,
+      "images": ["https://example.com/images/mansion1.jpg"]
+    },
+    {
+      "id": 18,
+      "name": "Cave House",
+      "category": "cave",
+      "destination": "Cappadocia, Turkey",
+      "checkIn": "2024-10-15",
+      "checkOut": "2024-10-22",
+      "guests": {
+        "adults": 2,
+        "children": 0,
+        "pets": 0
+      },
+      "pricePerNight": 300,
+      "beds": 1,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/cave1.jpg"]
+    },
+    {
+      "id": 19,
+      "name": "Historical Cottage",
+      "category": "historical_home",
+      "destination": "Edinburgh, Scotland",
+      "checkIn": "2024-09-05",
+      "checkOut": "2024-09-12",
+      "guests": {
+        "adults": 4,
+        "children": 1,
+        "pets": 0
+      },
+      "pricePerNight": 250,
+      "beds": 2,
+      "bathrooms": 1,
+      "images": ["https://example.com/images/historicalhome1.jpg"]
+    },
+    {
+      "id": 20,
+      "name": "Castle Experience",
+      "category": "castle",
+      "destination": "Loire Valley, France",
+      "checkIn": "2024-10-01",
+      "checkOut": "2024-10-10",
+      "guests": {
+        "adults": 8,
+        "children": 3,
+        "pets": 0
+      },
+      "pricePerNight": 1500,
+      "beds": 5,
+      "bathrooms": 4,
+      "images": ["https://example.com/images/castle1.jpg"]
+    }
+  ]
+  

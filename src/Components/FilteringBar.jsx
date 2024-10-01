@@ -30,13 +30,13 @@ import {
 } from "react-icons/gi";
 import { LiaTicketAltSolid } from "react-icons/lia";
 import { FaRegSnowflake } from "react-icons/fa";
+import { VscSettings } from "react-icons/vsc";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { VscSettings } from "react-icons/vsc";
 
 const FilteringBar = () => {
   const categories = [
