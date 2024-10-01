@@ -36,6 +36,7 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { VscSettings } from "react-icons/vsc";
 
 const FilteringBar = () => {
   const categories = [
@@ -229,12 +230,13 @@ const FilteringBar = () => {
   ];
 
   return (
-    <div className="my-6 border-t pt-6 ">
+    <div className="my-6 border-t p-6 flex gap-6">
       <Swiper
         modules={[Navigation]}
         spaceBetween={5}
-        slidesPerView={10}
+        slidesPerView={8}
         navigation
+        className="w-2/3 flex-grow px-6"
         // breakpoints={{
         //   320: {
         //     slidesPerView: 4,
@@ -260,6 +262,18 @@ const FilteringBar = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Filter button */}
+      <button className="flex gap-3 items-center px-3 border rounded-xl font-medium">
+        <VscSettings />
+        <span>Filters</span>
+      </button>
+
+      {/* Toggle bar */}
+      <div className="flex gap-3 items-center px-3 border rounded-xl cursor-pointer font-medium">
+        <span className="label-text">Display total before taxes</span>
+        <input type="checkbox" className="toggle" />
+      </div>
     </div>
   );
 };
