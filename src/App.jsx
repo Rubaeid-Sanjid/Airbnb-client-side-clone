@@ -1,4 +1,3 @@
-
 import './App.css'
 import CardsSection from './Components/CardsSection'
 import FilteringBar from './Components/FilteringBar'
