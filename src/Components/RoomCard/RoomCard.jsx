@@ -23,7 +23,7 @@ const RoomCard = ({ room }) => {
     const checkInDate = new Date(checkIn);
     const checkOutDate = new Date(checkOut);
 
-    console.log(checkInDate, checkOutDate);
+    // console.log(checkInDate, checkOutDate);
 
     const options = { month: "short", day: "numeric" };
 
@@ -34,7 +34,7 @@ const RoomCard = ({ room }) => {
       checkOutDate
     );
 
-    console.log(checkInFormatted, checkOutFormatted);
+    // console.log(checkInFormatted, checkOutFormatted);
 
     const checkInMonth = checkInDate.getMonth();
     const checkOutMonth = checkOutDate.getMonth();

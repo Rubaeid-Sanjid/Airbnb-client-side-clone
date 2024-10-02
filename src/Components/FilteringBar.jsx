@@ -1,4 +1,6 @@
 import FilterIcons from "./FilterIcons";
+import PropTypes from 'prop-types';
+
 import {
   IoBusiness,
   IoBed,
@@ -38,7 +40,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const FilteringBar = () => {
+const FilteringBar = ({filterItem, handleFilter}) => {
   const categories = [
     {
       "id": 1,
@@ -258,7 +260,7 @@ const FilteringBar = () => {
       >
         {categories.map((icon) => (
           <SwiperSlide key={icon.id}>
-            <FilterIcons iconTag={icon} />
+            <FilterIcons iconTag={icon} filterItem={filterItem} handleFilter={handleFilter}/>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -277,5 +279,10 @@ const FilteringBar = () => {
     </div>
   );
 };
+
+FilteringBar.propTypes = {
+  filterItem: PropTypes.string,
+  handleFilter: PropTypes.func
+}
 
 export default FilteringBar;

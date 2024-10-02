@@ -1,12 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 import RoomCard from './RoomCard/RoomCard';
 import axios from 'axios';
+import PropTypes from "prop-types";
 
-const CardsSection = () => {
+const CardsSection = ({filterItem}) => {
     const { isPending, error, data: rooms = []} = useQuery({
         queryKey: ['rooms'],
         queryFn: async ()=>{
-          const res = await axios.get('http://localhost:5000/rooms')
+          const res = await axios.get(`http://localhost:5000/rooms?category=${filterItem}`)
           return res.data
         }
       })
@@ -22,5 +23,8 @@ const CardsSection = () => {
         </div>
     );
 };
+CardsSection.propTypes = {
+    filterItem: PropTypes.string,
+  };
 
 export default CardsSection;
