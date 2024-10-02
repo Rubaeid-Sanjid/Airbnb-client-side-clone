@@ -73,7 +73,7 @@ const RoomCard = ({ room }) => {
         <div className="flex justify-between">
           <h2 className="text-lg font-medium">{destination}</h2>
           <h2 className="rating rating-sm flex items-center gap-1">
-            <input type="radio" name="rating-0" className="mask mask-star" />
+            <input type="radio" readOnly name="rating-0" className="mask mask-star" />
             <span className="text-[16px] ">{rating}</span>
           </h2>
         </div>

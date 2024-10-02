@@ -1,12 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 import RoomCard from './RoomCard/RoomCard';
+import axios from 'axios';
 
 const CardsSection = () => {
     const { isPending, error, data: rooms = []} = useQuery({
         queryKey: ['rooms'],
         queryFn: async ()=>{
-          const res = await fetch('../public/rooms.json')
-          return res.json()
+          const res = await axios.get('http://localhost:5000/rooms')
+          return res.data
         }
       })
 
