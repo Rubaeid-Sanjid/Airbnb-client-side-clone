@@ -6,14 +6,13 @@ import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
 
 function App() {
-// const [searchItem, setSearchItem] = useState(""); 
+const [searchItem, setSearchItem] = useState("");
 const [filterItem, setFilterItem] = useState(""); 
 
-// const handleSearch = (searchData) => {
-//   setSearch(searchData);
-// };
+const handleSearch = (searchData) => {
+  setSearchItem(searchData);
+};
 
-// Handle the filter criteria change
 const handleFilter = (filterData) => {
   setFilterItem(filterData);
 };
@@ -21,7 +20,7 @@ const handleFilter = (filterData) => {
   return (
     <>
       <Navbar></Navbar>
-      <SearchBar></SearchBar>
+      <SearchBar handleSearch={handleSearch} searchItem={searchItem} ></SearchBar>
       <FilteringBar filterItem={filterItem} handleFilter={handleFilter}></FilteringBar>
       <CardsSection filterItem={filterItem}></CardsSection>
     </>

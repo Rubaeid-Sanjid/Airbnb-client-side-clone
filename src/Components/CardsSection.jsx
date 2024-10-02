@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const CardsSection = ({filterItem}) => {
     const { isPending, error, data: rooms = []} = useQuery({
-        queryKey: ['rooms'],
+        queryKey: ['rooms', filterItem],
         queryFn: async ()=>{
           const res = await axios.get(`http://localhost:5000/rooms?category=${filterItem}`)
           return res.data

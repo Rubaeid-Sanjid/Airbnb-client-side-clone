@@ -10,7 +10,7 @@ console.log(filterItem, type);
     <button onClick={()=>handleFilter(type)} className={`flex flex-col items-center gap-3 pb-2 ${filterItem === type ? 'border-b-2 border-black' : 'border-b-0'} `}>
       <h3 className="text-2xl">{icon}</h3>
       <h3>{name}</h3>
-      <h3>{type}</h3>
+      {/* <h3>{type}</h3> */}
     </button>
   );
 };
