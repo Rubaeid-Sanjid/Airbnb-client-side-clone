@@ -4,21 +4,22 @@ import PropTypes from "prop-types";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
+import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 
 const SearchBar = ({ handleSearch, searchItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isDateExpanded, setIsDateExpanded] = useState(false);
+  const [isGuestExpanded, setIsGuestExpanded] = useState(false);
   const [input, setInput] = useState("");
+  const [guestInput, setGuestInput] = useState("");
+  const [adultCount, setAdultCount] = useState(0);
+  const [childrenCount, setChildrenCount] = useState(0);
+  const [petsCount, setPetsCount] = useState(0);
 
   const region = ["New York", "London", "Los Angeles", "Portland", "Dubai"];
 
-  const handleInput = (e) => {
-    setInput(e.target.value);
-  };
-
-  const handleOptionClick = (value) => {
-    setInput(value);
-  };
+  console.log(input);
+  console.log(guestInput);
 
   const [dateRange, setDateRange] = useState([
     {
@@ -46,13 +47,13 @@ const SearchBar = ({ handleSearch, searchItem }) => {
             className="input rounded-full px-8 pt-9 pb-4"
             onClick={() => setIsExpanded(!isExpanded)}
             value={input}
-            onChange={handleInput}
+            onChange={(e) => setInput(e.target.value)}
           />
 
           {isExpanded && (
             <ul className="menu absolute top-16 bg-base-100 rounded-box z-[10] w-52 p-2 shadow">
               {region.map((location, index) => (
-                <li key={index} onClick={() => handleOptionClick(location)}>
+                <li key={index} onClick={() => setInput(location)}>
                   <a>{location}</a>
                 </li>
               ))}
@@ -77,7 +78,10 @@ const SearchBar = ({ handleSearch, searchItem }) => {
             placeholder="Add dates"
             className="input rounded-full px-8 pt-9 pb-4"
             onClick={() => setIsDateExpanded(!isDateExpanded)}
-            value={dateRange[0].startDate.toLocaleDateString('en-US', {month: "short", day: "numeric"})}
+            value={dateRange[0].startDate.toLocaleDateString("en-US", {
+              month: "short",
+              day: "numeric",
+            })}
           />
         </label>
 
@@ -98,7 +102,10 @@ const SearchBar = ({ handleSearch, searchItem }) => {
             placeholder="Add dates"
             className="input rounded-full px-8 pt-9 pb-4"
             onClick={() => setIsDateExpanded(!isDateExpanded)}
-            value={dateRange[0].endDate.toLocaleString('en-US', {month: 'short', day: 'numeric'})}
+            value={dateRange[0].endDate.toLocaleString("en-US", {
+              month: "short",
+              day: "numeric",
+            })}
           />
         </label>
 
@@ -133,7 +140,91 @@ const SearchBar = ({ handleSearch, searchItem }) => {
             type="text"
             placeholder="Add guests"
             className="input rounded-full px-8 pt-9 pb-4"
+            value={guestInput}
+            onClick={() => setIsGuestExpanded(!isGuestExpanded)}
+            // onChange={(e) => setGuestInput(e.target.value)}
           />
+          {isGuestExpanded && (
+            <ul className="menu absolute top-16 bg-base-100 rounded-box z-[10] w-full p-2 shadow">
+              <li
+                onClick={() =>
+                  setGuestInput(1 + adultCount + childrenCount + " guests, ")
+                }
+              >
+                <div className="flex border-b pb-4 w-full justify-between">
+                  <div className="flex flex-col items-start">
+                    <h4 className="text-lg font-semibold">Adult</h4>
+                    <h4 className="">Ages 13 or above</h4>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CiCircleMinus
+                      size={30}
+                      onClick={() => setAdultCount(adultCount - 1)}
+                    />
+                    <h4>{adultCount}</h4>
+                    <CiCirclePlus
+                      size={30}
+                      onClick={() => setAdultCount(adultCount + 1)}
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li
+                onClick={() =>
+                  setGuestInput(1 + adultCount + childrenCount + " guests, ")
+                }
+              >
+                <div className="flex border-b pb-4 w-full justify-between">
+                  <div className="flex flex-col items-start">
+                    <h4 className="text-lg font-semibold">Children</h4>
+                    <h4 className="">Ages 2 – 12</h4>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CiCircleMinus
+                      size={30}
+                      onClick={() => setChildrenCount(childrenCount - 1)}
+                    />
+                    <h4>{childrenCount}</h4>
+                    <CiCirclePlus
+                      size={30}
+                      onClick={() => setChildrenCount(childrenCount + 1)}
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li
+                onClick={() =>
+                  setGuestInput(
+                    adultCount +
+                      childrenCount +
+                      " guests, " +
+                      (petsCount + 1) +
+                      " pets"
+                  )
+                }
+              >
+                <div className="flex border-b pb-4 w-full justify-between">
+                  <div className="flex flex-col items-start">
+                    <h4 className="text-lg font-semibold">Pets</h4>
+                    <h4 className="">Bringing a service animal?</h4>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CiCircleMinus
+                      size={30}
+                      onClick={() => setPetsCount(petsCount - 1)}
+                    />
+                    <h4>{petsCount}</h4>
+                    <CiCirclePlus
+                      size={30}
+                      onClick={() => setPetsCount(petsCount + 1)}
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          )}
           <button className="absolute right-2 top-1 bg-[#f85255] p-3 rounded-full flex items-center gap-2 text-white">
             <IoSearchOutline size={20} />
             <span
