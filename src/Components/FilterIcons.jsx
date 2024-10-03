@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const FilterIcons = ({ iconTag, filterItem, handleFilter }) => {
   const { name, icon, type } = iconTag;
 // const [selectedIcon, setSelectedIcon] = useState();
-console.log(filterItem, type);
+// console.log(filterItem, type);
 
   return (
     <button onClick={()=>handleFilter(type)} className={`flex flex-col items-center gap-3 pb-2 ${filterItem === type ? 'border-b-2 border-black' : 'border-b-0'} `}>

@@ -10,16 +10,15 @@ const SearchBar = ({ handleSearch, searchItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isDateExpanded, setIsDateExpanded] = useState(false);
   const [isGuestExpanded, setIsGuestExpanded] = useState(false);
+
   const [input, setInput] = useState("");
   const [guestInput, setGuestInput] = useState("");
+
   const [adultCount, setAdultCount] = useState(0);
   const [childrenCount, setChildrenCount] = useState(0);
   const [petsCount, setPetsCount] = useState(0);
 
   const region = ["New York", "London", "Los Angeles", "Portland", "Dubai"];
-
-  console.log(input);
-  console.log(guestInput);
 
   const [dateRange, setDateRange] = useState([
     {
@@ -29,9 +28,25 @@ const SearchBar = ({ handleSearch, searchItem }) => {
     },
   ]);
 
+  const searchData = {
+    input,
+    checkInDate: dateRange[0].startDate.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+    }),
+    checkOutDate: dateRange[0].endDate.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+    }),
+    guestInput
+  };
+
+  console.log(searchData);
   return (
     <div className={""}>
-      <form
+      <form onSubmit={(e)=>{
+        e.preventDefault()
+        handleSearch(searchData)}}
         className={`flex flex-col shadow-lg lg:flex-row rounded-full lg:w-3/4 p-1 mx-auto my-3 ${
           isExpanded ? "lg:border border-none" : "border"
         }`}
@@ -82,11 +97,9 @@ const SearchBar = ({ handleSearch, searchItem }) => {
               month: "short",
               day: "numeric",
             })}
+            readOnly
           />
         </label>
-
-        {/* Divider */}
-        {/* {isExpanded && <div className="divider lg:divider-horizontal py-2 lg:mx-0"></div>} */}
 
         {/* Check-out input */}
         <label
@@ -106,6 +119,7 @@ const SearchBar = ({ handleSearch, searchItem }) => {
               month: "short",
               day: "numeric",
             })}
+            readOnly
           />
         </label>
 
@@ -124,8 +138,6 @@ const SearchBar = ({ handleSearch, searchItem }) => {
             className="menu absolute top-[25%] left-[25%] bg-base-100 rounded-box z-[10] p-2 shadow"
           />
         )}
-        {/* Divider */}
-        {/* {isExpanded && <div className="divider lg:divider-horizontal py-2 lg:mx-0"></div>} */}
 
         {/* Who input */}
         <div
@@ -142,7 +154,7 @@ const SearchBar = ({ handleSearch, searchItem }) => {
             className="input rounded-full px-8 pt-9 pb-4"
             value={guestInput}
             onClick={() => setIsGuestExpanded(!isGuestExpanded)}
-            // onChange={(e) => setGuestInput(e.target.value)}
+            readOnly
           />
           {isGuestExpanded && (
             <ul className="menu absolute top-16 bg-base-100 rounded-box z-[10] w-full p-2 shadow">

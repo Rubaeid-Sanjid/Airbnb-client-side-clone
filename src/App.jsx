@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
 
 function App() {
-const [searchItem, setSearchItem] = useState("");
+const [searchItem, setSearchItem] = useState({});
 const [filterItem, setFilterItem] = useState(""); 
 
 const handleSearch = (searchData) => {
