@@ -6,7 +6,7 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 
-const SearchBar = ({ handleSearch, searchItem }) => {
+const SearchBar = ({ handleSearch }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isDateExpanded, setIsDateExpanded] = useState(false);
   const [isGuestExpanded, setIsGuestExpanded] = useState(false);
@@ -30,23 +30,23 @@ const SearchBar = ({ handleSearch, searchItem }) => {
 
   const searchData = {
     input,
-    checkInDate: dateRange[0].startDate.toLocaleDateString("en-US", {
-      month: "short",
-      day: "numeric",
-    }),
-    checkOutDate: dateRange[0].endDate.toLocaleDateString("en-US", {
-      month: "short",
-      day: "numeric",
-    }),
-    guestInput
+    checkInDate: dateRange[0].startDate.toLocaleDateString(),
+    checkOutDate: dateRange[0].endDate.toLocaleDateString(),
+    guestInput,
   };
 
+  const sendSearchData = (e) => {
+    e.preventDefault();
+    handleSearch(searchData);
+    setIsExpanded(false);
+    setIsDateExpanded(false);
+    setIsGuestExpanded(false);
+  };
   console.log(searchData);
   return (
     <div className={""}>
-      <form onSubmit={(e)=>{
-        e.preventDefault()
-        handleSearch(searchData)}}
+      <form
+        onSubmit={sendSearchData}
         className={`flex flex-col shadow-lg lg:flex-row rounded-full lg:w-3/4 p-1 mx-auto my-3 ${
           isExpanded ? "lg:border border-none" : "border"
         }`}
@@ -253,7 +253,6 @@ const SearchBar = ({ handleSearch, searchItem }) => {
 
 SearchBar.propTypes = {
   handleSearch: PropTypes.func,
-  searchItem: PropTypes.string,
 };
 
 export default SearchBar;

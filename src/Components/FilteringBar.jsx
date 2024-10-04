@@ -239,24 +239,6 @@ const FilteringBar = ({filterItem, handleFilter}) => {
         slidesPerView={8}
         navigation
         className="w-2/3 flex-grow px-6"
-        // breakpoints={{
-        //   320: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 10,
-        //   },
-        //   640: {
-        //     slidesPerView: 6,
-        //     spaceBetween: 15,
-        //   },
-        //   768: {
-        //     slidesPerView: 8,
-        //     spaceBetween: 20,
-        //   },
-        //   1024: {
-        //     slidesPerView: 10,
-        //     spaceBetween: 10,
-        //   },
-        // }}
       >
         {categories.map((icon) => (
           <SwiperSlide key={icon.id}>

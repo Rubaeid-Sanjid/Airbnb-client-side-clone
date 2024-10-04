@@ -12,6 +12,7 @@ const [filterItem, setFilterItem] = useState("");
 const handleSearch = (searchData) => {
   setSearchItem(searchData);
 };
+console.log(searchItem);
 
 const handleFilter = (filterData) => {
   setFilterItem(filterData);
@@ -22,7 +23,7 @@ const handleFilter = (filterData) => {
       <Navbar></Navbar>
       <SearchBar handleSearch={handleSearch} searchItem={searchItem} ></SearchBar>
       <FilteringBar filterItem={filterItem} handleFilter={handleFilter}></FilteringBar>
-      <CardsSection filterItem={filterItem}></CardsSection>
+      <CardsSection filterItem={filterItem} searchItem={searchItem}></CardsSection>
     </>
   )
 }

@@ -9,7 +9,6 @@ import { FaRegHeart } from "react-icons/fa";
 const RoomCard = ({ room }) => {
   const {
     name,
-    category,
     destination,
     checkIn,
     checkOut,
@@ -23,8 +22,6 @@ const RoomCard = ({ room }) => {
     const checkInDate = new Date(checkIn);
     const checkOutDate = new Date(checkOut);
 
-    // console.log(checkInDate, checkOutDate);
-
     const options = { month: "short", day: "numeric" };
 
     const checkInFormatted = new Intl.DateTimeFormat("en-US", options).format(
@@ -33,8 +30,6 @@ const RoomCard = ({ room }) => {
     const checkOutFormatted = new Intl.DateTimeFormat("en-US", options).format(
       checkOutDate
     );
-
-    // console.log(checkInFormatted, checkOutFormatted);
 
     const checkInMonth = checkInDate.getMonth();
     const checkOutMonth = checkOutDate.getMonth();

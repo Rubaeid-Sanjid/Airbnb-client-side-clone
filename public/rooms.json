@@ -446,5 +446,25 @@
     "https://i.postimg.cc/fLhj9wLt/arctic2.webp"],
     "rating": 5.0,
     "review": "Guest favorite"
+  },
+  {
+    "id": 22,
+    "name": "Arctic",
+    "category": "arctic",
+    "destination": "Inari, Finland",
+    "checkIn": "2024-10-01",
+    "checkOut": "2024-10-06",
+    "guests": {
+      "adults": 4,
+      "children": 2,
+      "pets": 0
+    },
+    "pricePerNight": 1500,
+    "beds": 4,
+    "bathrooms": 3,
+    "images": ["https://i.postimg.cc/fLhj9wLt/arctic2.webp","https://i.postimg.cc/tTtddLZr/arctic.webp"
+    ],
+    "rating": 5.0,
+    "review": "Guest favorite"
   }
 ]
